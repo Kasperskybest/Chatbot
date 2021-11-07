@@ -16,17 +16,17 @@ client.on("messageCreate", async message => {
     .replace(/@(here)/gi, "here");
   if (message.content.includes(`@`)) {
     return message.reply({
-      content: `**:x: Please dont mention anyone while talking to me I feel attacked 😭**`
+      content: `**:x: Why ping the kid,he might be busy 😭**`
     });
   }
   if (!message.content)
     return message.reply({
-      content: "I can only reply to text messages"
+      content: "I dont know what to say"
     });
   x.chat({
     message: message.content,
     name: client.user.username,
-    owner: "NOBITA#2433",
+    owner: "The Dark Side#3255",
     user: message.author.id,
     language: "en"
   }).then(reply => {
